@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{include/head}"><!-- layout文件路径-->
+<head>
+    <meta charset="UTF-8"/>
+    <title>首页</title>
+    <script type="text/javascript"  th:src="@{/js/index.js}"></script>
+</head>
+<body>
+<section layout:fragment="content">
+    Welcome<br/><input id="text" type="text"/>
+    <button onclick="web.socket.index.send()">发送消息</button>
+    <hr/>
+    <button onclick="web.socket.index.closeWebSocket()">关闭WebSocket连接</button>
+    <hr/>
+    <div id="message"></div>
+</section>
+</body>
+</html>

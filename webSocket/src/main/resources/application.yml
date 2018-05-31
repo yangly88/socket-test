@@ -1,0 +1,9 @@
+logback:
+  path : e:/log
+  name : testLog
+  level : info
+spring:
+  thymeleaf:
+    cache: false
+    content-type: text/html
+    mode: LEGACYHTML5
